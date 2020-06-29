@@ -19,7 +19,6 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
-
         <!--增加Feign的依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

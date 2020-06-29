@@ -27,10 +27,14 @@
 
     <modules>
         <module>../microservicecloud-api</module>
-        <module>../microservicecloud-provider-dept-8001</module>
-        <module>../microservicecloud-consumer-dept-80</module>
-        <module>../microservicecloud-eureka-21010</module>
         <module>../microservicecloud-common</module>
+        <module>../microservicecloud-eureka-21010</module>
+        <module>../microservicecloud-eureka-21020</module>
+        <module>../microservicecloud-eureka-21030</module>
+        <module>../microservicecloud-provider-dept-22010</module>
+        <module>../microservicecloud-provider-dept-22020</module>
+        <module>../microservicecloud-provider-dept-22030</module>
+        <module>../microservicecloud-consumer-dept-23010</module>
     </modules>
 
     <dependencyManagement>

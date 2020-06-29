@@ -1,6 +1,6 @@
 # 配置服务器信息
 server:
-  port: 21010
+  port: 21030
 
 spring:
   datasource:
@@ -12,7 +12,7 @@ spring:
 
 eureka:
   instance:
-    hostname: eureka21010.cn  #eureka服务端的实例名称
+    hostname: eureka21030.cn  #eureka服务端的实例名称
   client:
     register-with-eureka: false   #false表示不向注册中心注册自己
     fetch-registry: false   #false 表示自己就是注册中心，职责就是维护服务实例，并不需要去检索服务
@@ -20,4 +20,4 @@ eureka:
       # 单机版配置defaultZone：设置与eureka server 交互的地址查询服务和注册服务都需要依赖的地址
       # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       # 集群配置
-      defaultZone: http://eureka21020.cn:21020/eureka/,http://eureka21030.cn:21030/eureka/
+      defaultZone: http://eureka21010.cn:21010/eureka/,http://eureka21020.cn:21020/eureka/
