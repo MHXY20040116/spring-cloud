@@ -23,7 +23,7 @@ public class DeptClientServiceFallBackFactory implements FallbackFactory<DeptCli
             public DeptEntity getById(Long deptNo) {
                 return new DeptEntity().setDeptNo(deptNo)
                         .setDeptName("该deptNo没有对应的信息，Consumer客户端提供的降级信息，此刻服务provider已经关闭")
-                        .setDbSource("没有这个数据库");
+                        .setDbSource("No this Database in MySQL");
             }
 
             @Override

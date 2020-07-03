@@ -12,12 +12,12 @@ import java.util.List;
 public interface DeptClientService {
 
     @RequestMapping(value = "/dept/add", method = RequestMethod.POST)
-    public boolean add(DeptEntity deptEntity);
+    boolean add(DeptEntity deptEntity);
 
     @RequestMapping(value = "/dept/get/{deptNo}", method = RequestMethod.GET)
-    public DeptEntity getById(@PathVariable("deptNo") Long deptNo);
+    DeptEntity getById(@PathVariable("deptNo") Long deptNo);
 
     @RequestMapping(value = "/dept/list", method = RequestMethod.GET)
-    public List<DeptEntity> list();
+    List<DeptEntity> list();
 
 }

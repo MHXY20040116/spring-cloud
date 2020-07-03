@@ -1,0 +1,41 @@
+# 配置服务器信息
+server:
+  port: 22010
+
+# 数据库信息配置
+spring:
+  application:
+    name: msc-zuul-gateway  #应用名称
+  datasource:
+    url: jdbc:mysql://192.168.0.82:3306/sys?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Hongkong
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+# 注册eureka服务列表
+eureka:
+  client:
+    service-url:
+      # defaultZone: http://127.0.0.1:22010/eureka
+      defaultZone: http://eureka21010.cn:21010/eureka/,http://eureka21020.cn:21020/eureka/,http://eureka21030.cn:21030/eureka/
+  instance:
+    #服务实例名称修改
+    instance-id: msc-zuul-gateway20010
+    #访问路径显示IP地址
+    prefer-ip-address: true
+
+zuul:
+  prefix: /springcloud
+  routes:
+    mydept.serviceId: msc-dept
+    mydept.path: /msc/*
+  # 多个用"*" ignored-services: "*"
+  ignored-services: msc-dept
+
+
+info:
+  app.name: springcloud-microservice-zill-gateway
+  company.name: www.gpnu.edu.cn
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}

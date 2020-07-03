@@ -34,7 +34,12 @@
         <module>../microservicecloud-provider-dept-22010</module>
         <module>../microservicecloud-provider-dept-22020</module>
         <module>../microservicecloud-provider-dept-22030</module>
+        <module>../microservicecloud-provider-dept-hystrix-22010</module>
         <module>../microservicecloud-consumer-dept-23010</module>
+        <module>../microservicecloud-consumer-hystrix-dashboard</module>
+        <module>../microservicecloud-zuul-gateway-20010</module>
+        <module>../microservicecloud-config-24010</module>
+        <module>../microservicecloud-config-client-24020</module>
     </modules>
 
     <dependencyManagement>
